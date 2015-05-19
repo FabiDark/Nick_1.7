@@ -8,6 +8,13 @@ import java.sql.SQLException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+/**
+ * Project: SurvivalGames
+ * Created by FabiDark
+ * Date: 19.05.2015
+ * Time: 16:45:20
+ */
+
 public class MySQL {
 	
 	public static String host;

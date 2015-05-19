@@ -9,6 +9,13 @@ import org.bukkit.configuration.file.YamlConfiguration;
 
 import de.SurvivalGames.main.SurvivalGames;
 
+/**
+ * Project: SurvivalGames
+ * Created by FabiDark
+ * Date: 19.05.2015
+ * Time: 16:45:20
+ */
+
 public class FileManager {
 
 	// Config File

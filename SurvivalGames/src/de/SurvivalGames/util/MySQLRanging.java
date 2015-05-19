@@ -14,6 +14,13 @@ import org.bukkit.block.BlockState;
 import org.bukkit.block.Sign;
 import org.bukkit.block.Skull;
 
+/**
+ * Project: SurvivalGames
+ * Created by FabiDark
+ * Date: 19.05.2015
+ * Time: 16:45:20
+ */
+
 public class MySQLRanging {
 	
 	static HashMap<Integer, String> rang = new HashMap<Integer, String>();

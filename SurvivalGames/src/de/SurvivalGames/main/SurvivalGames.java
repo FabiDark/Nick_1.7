@@ -17,6 +17,13 @@ import de.SurvivalGames.Listener.DeathListener;
 import de.SurvivalGames.util.FileManager;
 import de.SurvivalGames.util.MySQL;
 
+/**
+ * Project: SurvivalGames
+ * Created by FabiDark
+ * Date: 19.05.2015
+ * Time: 16:45:20
+ */
+
 public class SurvivalGames extends JavaPlugin {
 	
 	public static SurvivalGames instance;
@@ -28,6 +35,9 @@ public class SurvivalGames extends JavaPlugin {
 	public ArrayList<String> spectator = new ArrayList<String>();
 	public ArrayList<String> life = new ArrayList<String>();
 	public ArrayList<String> death = new ArrayList<String>();
+	public ArrayList<String> lobby = new ArrayList<String>();
+	
+	public static GameStats status = GameStats.WAITING;
 	
 	@Override
 	public void onLoad() {
