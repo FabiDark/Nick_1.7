@@ -1,0 +1,10 @@
+main: de.SurvivalGames.main.SurvivalGames
+name: SurvivalGames
+author: FabiDark
+version: 1.0
+
+commands:
+  help:
+  stats:
+
+permissions:
