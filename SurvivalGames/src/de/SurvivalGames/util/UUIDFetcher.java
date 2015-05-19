@@ -17,6 +17,7 @@ import java.util.concurrent.Callable;
  * Created by WolfPlaysDE
  * On 03.04.2015 at 01:17:21
  */
+
 public class UUIDFetcher implements Callable<Map<String, UUID>> {
 	
     private static final double PROFILES_PER_REQUEST = 100;
