@@ -1,0 +1,7 @@
+main: de.Nick.main.Main
+author: FabiDark
+version: 1.0
+name: Nick
+
+commands:
+  nick:
