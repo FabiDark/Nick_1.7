@@ -5,6 +5,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 
+import de.Nick.Nick.Nick;
 import de.SurvivalGames.main.SurvivalGames;
 
 /**
@@ -28,9 +29,11 @@ public class JoinListener implements Listener {
 		
 		Player p = e.getPlayer();
 		
+		if(p.hasPermission("system.nick")) {
+			Nick.setNick(p);
+		}
+		
 		e.setJoinMessage(plugin.prefix + p.getDisplayName() + " §6ist dem Spiel beigetreten!");
-		
-		
 		
 	}
 }

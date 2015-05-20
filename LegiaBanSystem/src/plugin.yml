@@ -1,0 +1,13 @@
+name: MySQLBanSystem
+version: 2.0
+author: FabiDark
+main: de.legiamc.mysqlbansystem.Main.Main
+
+commands:
+  permban:
+  tempban:
+  unban:
+  checkban:
+  addwarn:
+  removewarn:
+  checkwarn:
