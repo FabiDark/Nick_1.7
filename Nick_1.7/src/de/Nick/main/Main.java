@@ -5,6 +5,8 @@ import java.util.HashMap;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import de.Nick.Nick.Nick;
+import de.Nick.util.MySQL;
+import de.Nick.util.MySQLFile;
 
 public class Main extends JavaPlugin {
 	
@@ -23,13 +25,18 @@ public class Main extends JavaPlugin {
 	
 	@Override
 	public void onEnable() {
+		MySQLFile file = new MySQLFile();
+		file.setStandard();
+		file.readData();
+		
+		MySQL.connect();
 		getServer().getPluginManager().registerEvents(new Nick(),this);
 		getCommand("nick").setExecutor(new Nick());
 	}
 	
 	@Override
 	public void onDisable() {
-		
+		MySQL.disconnect();
 	}
 	
 	public static Main getInstance() {

@@ -36,7 +36,6 @@ public class MySQL {
 			try {
 				con = DriverManager.getConnection("jdbc:mysql://" + host + ":" + port + "/" + database, username, password);
 				setupNick();
-				setupstatus();
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
@@ -71,25 +70,6 @@ public class MySQL {
 					public void run() {
 						try {
 							String qry = "CREATE TABLE IF NOT EXISTS `Nick` (uuid TEXT, playername TEXT, Nickname TEXT)";
-							PreparedStatement stmt;
-							stmt = con.prepareStatement(qry);
-							stmt.executeUpdate();
-							stmt.close();
-						} catch (SQLException e) {
-							e.printStackTrace();
-						}
-					}
-				});
-			}
-		}
-		
-		private static void setupstatus() {
-			if(isConnected()) {
-				executor.execute(new Runnable() {
-					@Override
-					public void run() {
-						try {
-							String qry = "CREATE TABLE IF NOT EXISTS `SurvivalGames-Status` (server TEXT, Status TEXT)";
 							PreparedStatement stmt;
 							stmt = con.prepareStatement(qry);
 							stmt.executeUpdate();

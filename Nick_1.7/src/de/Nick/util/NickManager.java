@@ -7,7 +7,7 @@ import java.sql.SQLException;
 public class NickManager {
 	
 	public static boolean isInMySQL(String uuid) {
-		ResultSet rs = MySQL.getResult("SELECT playername FROM `Nick` WHERE uuid = '" + uuid + "'");
+		ResultSet rs = MySQL.getResult("SELECT uuid FROM `Nick` WHERE uuid = '" + uuid + "'");
 		try {
 			return rs.next();
 		} catch (SQLException e) {
