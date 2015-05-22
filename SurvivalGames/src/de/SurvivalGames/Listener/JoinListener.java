@@ -21,7 +21,6 @@ public class JoinListener implements Listener {
 	
 	public JoinListener(SurvivalGames survivalgames) {
 		this.plugin = survivalgames;
-		plugin.getServer().getPluginManager().registerEvents(this, survivalgames);
 	}
 	
 	@EventHandler

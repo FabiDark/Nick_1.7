@@ -1,10 +1,15 @@
 main: de.SurvivalGames.main.SurvivalGames
 name: SurvivalGames
 author: FabiDark
-version: 1.0
+version: 2.5
 
 commands:
   help:
   stats:
+  ?:
+  nick:
+  fix:
+  hub:
+  l:
 
 permissions:

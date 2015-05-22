@@ -22,7 +22,6 @@ public class DeathListener implements Listener {
 	
 	public DeathListener(SurvivalGames survivalgames) {
 		this.plugin = survivalgames;
-		plugin.getServer().getPluginManager().registerEvents(this, survivalgames);
 	}
 	
 	@EventHandler

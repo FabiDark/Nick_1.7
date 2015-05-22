@@ -24,11 +24,11 @@ import de.SurvivalGames.main.SurvivalGames;
 
 public class DeathChest implements Listener {
 
+	@SuppressWarnings("unused")
 	private SurvivalGames plugin;
 
 	public DeathChest(SurvivalGames survivalgames) {
 		this.plugin = survivalgames;
-		plugin.getServer().getPluginManager().registerEvents(this, survivalgames);
 	}
 	
 	public static HashMap<Block, Inventory> DeathChest = new HashMap<Block, Inventory>();

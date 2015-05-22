@@ -32,7 +32,6 @@ public class ChestListener implements Listener{
 		this.plugin = survivalgames;
 		this.items = new ArrayList<ItemStack>();
 		setChestItems();
-		plugin.getServer().getPluginManager().registerEvents(this, survivalgames);
 	}
 	
 	@EventHandler

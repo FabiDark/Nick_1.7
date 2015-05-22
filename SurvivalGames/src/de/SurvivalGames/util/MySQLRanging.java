@@ -88,7 +88,7 @@ public class MySQLRanging {
 					S.setLine(0, "Platz #" + id);
 					S.setLine(1, rang.get(id));
 					S.setLine(2, SGManager.getKills(rang.get(id)) + " Kills");
-					S.setLine(3, SGManager.getPoints(rang.get(id)) + " Punkte");
+					S.setLine(3, SGManager.getWins(rang.get(id)) + " Wins");
 					S.update();
 				} catch (IndexOutOfBoundsException e) {
 					e.printStackTrace();

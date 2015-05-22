@@ -89,7 +89,7 @@ public class MySQL {
 					@Override
 					public void run() {
 						try {
-							String qry = "CREATE TABLE IF NOT EXISTS `SurvivalGames-Status` (server TEXT, Status TEXT)";
+							String qry = "CREATE TABLE IF NOT EXISTS `SurvivalGames-Status` (server TEXT, status TEXT)";
 							PreparedStatement stmt;
 							stmt = con.prepareStatement(qry);
 							stmt.executeUpdate();
